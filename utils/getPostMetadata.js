@@ -18,6 +18,7 @@ export default function getPostMetadata(basePath) {
       date: matterResult.data.date || "No date",
       tag: matterResult.data.tag || "No tag",
       description: matterResult.data.description || "No description",
+      type: matterResult.data.type || "No type",
       slug: filename.replace('.md', ''),
     };
   });

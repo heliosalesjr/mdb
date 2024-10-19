@@ -3,6 +3,7 @@ title: "Os Maiores Sucessos dos Rolling Stones"
 date: 2024-10-18
 tag: "Músicas"
 description: "Uma lista detalhada das músicas mais emblemáticas dos Rolling Stones, que marcaram a história do rock."
+type: "tech"
 ---
 
 # Os Maiores Sucessos dos Rolling Stones

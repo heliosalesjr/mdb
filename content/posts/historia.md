@@ -3,6 +3,7 @@ title: "A História dos Rolling Stones"
 date: 2024-10-18
 tag: "História da Banda"
 description: "Uma viagem pela trajetória de uma das maiores bandas de rock de todos os tempos, desde sua formação até seu impacto global."
+type: "tech"
 ---
 
 # A História dos Rolling Stones

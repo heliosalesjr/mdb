@@ -3,6 +3,7 @@ title: "Keith Richards: A Alma do Rock 'n' Roll"
 date: 2024-10-18
 tag: "Integrantes"
 description: "Keith Richards, o lendário guitarrista dos Rolling Stones, e sua longa e controversa trajetória na música."
+type: "tech"
 ---
 
 # Keith Richards: A Alma do Rock 'n' Roll
