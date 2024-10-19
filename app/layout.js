@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -18,12 +19,42 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+  let header = (
+    <header className="flex items-center justify-between p-4 bg-gray-800 text-white">
+      <div>
+        <h1 className="text-2xl font-bold">Helio's main B.</h1>
+      </div>
+      <nav>
+        <ul className="flex space-x-4">
+          <li>
+            <Link href="/" className="hover:underline">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/post" className="hover:underline">
+              Posts
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+
+  let footer = (
+    <footer className="p-4 bg-gray-800 text-white">
+      <p className="text-center">Helio Sales Jr. © 2024</p>
+    </footer>
+  );
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {header}
         {children}
+        {footer}
       </body>
     </html>
   );
