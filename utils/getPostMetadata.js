@@ -23,6 +23,6 @@ export default function getPostMetadata(basePath) {
     };
   });
 
-  console.log("Posts extracted:", posts); // Verifique os posts extraídos
+  
   return posts;
 }

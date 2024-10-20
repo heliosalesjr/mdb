@@ -15,10 +15,9 @@ export default async function Post({ params }) {
 
   return (
     <div>
-      <h1>{data.title}</h1>
-      <p>{new Date(data.date).toLocaleDateString()}</p>
+      
       {/* Renderiza o conteúdo Markdown usando markdown-to-jsx */}
-      <div>
+      <div className="prose mx-auto">
         <Markdown>{content}</Markdown>
       </div>
     </div>

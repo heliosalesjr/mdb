@@ -12,8 +12,7 @@ export default async function Home() {
 
   return (
     <>
-      <h1>Hi!</h1>
-
+     
       <section>
         <h2>História</h2>
         {techPosts.length > 0 ? (
