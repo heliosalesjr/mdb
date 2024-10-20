@@ -1,5 +1,7 @@
 import getPostMetadata from "@/utils/getPostMetadata";
-import Link from 'next/link';
+import HistorySection from "@/components/HistorySection";
+import RecordSection from "@/components/RecordSection";
+import PlaceSection from "@/components/PlaceSection";
 
 export default async function Home() {
   // Carregar posts diretamente no lado do servidor
@@ -12,51 +14,9 @@ export default async function Home() {
 
   return (
     <>
-     
-      <section>
-        <h2>História</h2>
-        {techPosts.length > 0 ? (
-          techPosts.map((post) => (
-            <div key={post.slug}>
-              <Link href={`/posts/${post.slug}`}>
-                <h3>{post.title}</h3>
-              </Link>
-            </div>
-          ))
-        ) : (
-          <p>No tech posts available</p>
-        )}
-      </section>
-
-      <section>
-        <h2>Discos</h2>
-        {recordPosts.length > 0 ? (
-          recordPosts.map((post) => (
-            <div key={post.slug}>
-              <Link href={`/posts/${post.slug}`}>
-                <h3>{post.title}</h3>
-              </Link>
-            </div>
-          ))
-        ) : (
-          <p>No record posts available</p>
-        )}
-      </section>
-
-      <section>
-        <h2>Lugares</h2>
-        {placePosts.length > 0 ? (
-          placePosts.map((post) => (
-            <div key={post.slug}>
-              <Link href={`/posts/${post.slug}`}>
-                <h3>{post.title}</h3>
-              </Link>
-            </div>
-          ))
-        ) : (
-          <p>No place posts available</p>
-        )}
-      </section>
+      <HistorySection posts={techPosts} />
+      <RecordSection posts={recordPosts} />
+      <PlaceSection posts={placePosts} />
     </>
   );
 }
