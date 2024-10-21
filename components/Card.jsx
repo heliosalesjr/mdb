@@ -20,7 +20,7 @@ export default function Card({ post }) {
       {/* Conteúdo do Card */}
       <div className="p-5">
         <Link href={`/posts/${post.slug}`}>
-          <h3 className="text-xl font-semibold text-red-400 hover:text-red-300 transition-colors">{post.title}</h3>
+          <h3 className="text-xl font-semibold text-red-500 hover:text-red-400 transition-colors">{post.title}</h3>
         </Link>
         <p className="mt-3 text-slate-300">{post.description}</p>
       </div>

@@ -21,9 +21,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
   let header = (
-    <header className="flex items-center justify-between p-4 bg-gray-800 text-white">
+    <header className="flex items-center justify-between p-4 bg-slate-50 text-slate-600">
       <div>
-        <h1 className="text-2xl font-black">The<span className="text-red-500">Rolling</span><span className="font-black text-blue-500">Stones</span><span className="font-black text-white">Blog</span></h1>
+        <h1 className="text-2xl font-black">The<span className="text-red-500">Rolling</span><span className="font-black text-blue-500">Stones</span><span className="font-black text-slate-600">Blog</span></h1>
       </div>
       <nav>
         <ul className="flex space-x-4">
