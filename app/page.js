@@ -4,6 +4,7 @@ import getPostMetadata from "@/utils/getPostMetadata";
 import HistorySection from "@/components/HistorySection";
 import RecordSection from "@/components/RecordSection";
 import PlaceSection from "@/components/PlaceSection";
+import TestMotion from "@/components/test-motion";
 
 export default async function Home() {
   const posts = await getPostMetadata('content/posts') || [];
@@ -14,6 +15,7 @@ export default async function Home() {
 
   return (
     <>
+      
       <div className="max-w-5xl mx-auto">
         <HistorySection posts={techPosts} />
         <RecordSection posts={recordPosts} />

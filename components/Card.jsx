@@ -1,12 +1,22 @@
+"use client";
 // components/Card.jsx
 
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 export default function Card({ post }) {
   return (
-    <div className="bg-slate-800 text-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+    <motion.div
+      className="bg-slate-800 text-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+      initial={{ opacity: 0, y: 20 }} // Começa invisível e um pouco abaixo
+      animate={{ opacity: 1, y: 0 }} // Fica totalmente visível e se move para a posição original
+      transition={{ duration: 0.5 }} // Duração da animação
+    >
       {/* Imagem do post */}
-      <div className="h-48 bg-cover bg-center rounded-t-lg" style={{ backgroundImage: `url(${post.image})` }} />
+      <div
+        className="h-48 bg-cover bg-center rounded-t-lg"
+        style={{ backgroundImage: `url(${post.image})` }}
+      />
       {/* Conteúdo do Card */}
       <div className="p-5">
         <Link href={`/posts/${post.slug}`}>
@@ -14,6 +24,6 @@ export default function Card({ post }) {
         </Link>
         <p className="mt-3 text-slate-300">{post.description}</p>
       </div>
-    </div>
+    </motion.div>
   );
 }
