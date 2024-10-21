@@ -4,6 +4,7 @@ date: 2024-10-19
 tag: "Locais Históricos"
 description: "O fatídico show dos Rolling Stones no Altamont Speedway, em 1969, que marcou o fim da era de paz e amor."
 type: "place"
+image: "/img/stones.jpeg"
 ---
 
 # Altamont Speedway: O Concerto que Mudou o Rock

@@ -3,6 +3,7 @@ title: "Escândalos e Polêmicas dos Rolling Stones"
 date: 2024-10-18
 tag: "Controvérsias"
 description: "Os Rolling Stones não apenas dominaram as paradas musicais, mas também atraíram controvérsias e escândalos ao longo das décadas."
+image: "/img/stones.jpeg"
 type: "tech"
 ---
 

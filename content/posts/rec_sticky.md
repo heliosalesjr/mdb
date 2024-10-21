@@ -4,6 +4,7 @@ date: 2024-10-19
 tag: "Álbuns Clássicos"
 description: "Uma exploração de 'Sticky Fingers', o álbum de 1971 que marcou uma nova era criativa para os Stones."
 type: "record"
+image: "/img/stones.jpeg"
 ---
 
 # Sticky Fingers: Clássico do Rock e Blues

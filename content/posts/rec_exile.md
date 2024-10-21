@@ -4,6 +4,7 @@ date: 2024-10-19
 tag: "Álbuns Clássicos"
 description: "A história por trás de 'Exile on Main St.', gravado em meio ao caos e considerado uma obra-prima dos Rolling Stones."
 type: "record"
+image: "/img/stones.jpeg"
 ---
 
 # Exile on Main St.: Caos e Gênio

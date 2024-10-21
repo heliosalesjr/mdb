@@ -1,20 +1,20 @@
-import Link from 'next/link';
+// components/PlaceSection.jsx
+
+import Card from '@/components/Card';
 
 export default function PlaceSection({ posts }) {
   return (
-    <section>
-      <h2>Lugares</h2>
-      {posts.length > 0 ? (
-        posts.map((post) => (
-          <div key={post.slug}>
-            <Link href={`/posts/${post.slug}`}>
-              <h3>{post.title}</h3>
-            </Link>
-          </div>
-        ))
-      ) : (
-        <p>No place posts available</p>
-      )}
+    <section className="my-8">
+      <h2 className="text-3xl font-bold text-slate-700 mb-6">Lugares</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {posts.length > 0 ? (
+          posts.map((post) => (
+            <Card key={post.slug} post={post} />
+          ))
+        ) : (
+          <p className="text-slate-400">No place posts available</p>
+        )}
+      </div>
     </section>
   );
 }

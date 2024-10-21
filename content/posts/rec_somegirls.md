@@ -4,6 +4,7 @@ date: 2024-10-19
 tag: "Álbuns Clássicos"
 description: "Uma análise de 'Some Girls', o álbum de 1978 que revitalizou a carreira dos Rolling Stones em meio à era do punk e disco."
 type: "record"
+image: "/img/stones.jpeg"
 ---
 
 # Some Girls: O Renascimento nos Anos 70

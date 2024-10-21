@@ -4,6 +4,7 @@ date: 2024-10-19
 tag: "Álbuns Clássicos"
 description: "Com 'Beggars Banquet', os Rolling Stones retornam às suas influências de blues e folk, criando um álbum seminal em 1968."
 type: "record"
+image: "/img/stones.jpeg"
 ---
 
 # Beggars Banquet: Retorno às Raízes

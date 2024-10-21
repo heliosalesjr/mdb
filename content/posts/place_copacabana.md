@@ -4,6 +4,7 @@ date: 2024-10-19
 tag: "Locais Históricos"
 description: "Os Rolling Stones fizeram história com um show monumental na Praia de Copacabana, no Rio de Janeiro, em 2006."
 type: "place"
+image: "/img/stones.jpeg"
 ---
 
 # Copacabana: O Show para 1,5 Milhão de Pessoas

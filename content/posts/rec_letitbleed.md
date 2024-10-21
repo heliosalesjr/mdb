@@ -4,6 +4,7 @@ date: 2024-10-19
 tag: "Álbuns Clássicos"
 description: "Análise de 'Let It Bleed', um dos álbuns mais aclamados dos Rolling Stones, lançado em 1969."
 type: "record"
+image: "/img/stones.jpeg"
 ---
 
 # Let It Bleed: O Apogeu dos Anos 60

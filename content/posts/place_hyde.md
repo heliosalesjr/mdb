@@ -4,6 +4,7 @@ date: 2024-10-19
 tag: "Locais Históricos"
 description: "Em 1969, os Rolling Stones prestaram homenagem a Brian Jones em um show histórico no Hyde Park de Londres."
 type: "place"
+image: "/img/stones.jpeg"
 ---
 
 # Hyde Park: O Tributo a Brian Jones

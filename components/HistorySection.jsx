@@ -1,20 +1,20 @@
-import Link from 'next/link';
+// components/HistorySection.jsx
+
+import Card from '@/components/Card';
 
 export default function HistorySection({ posts }) {
   return (
-    <section>
-      <h2>História</h2>
-      {posts.length > 0 ? (
-        posts.map((post) => (
-          <div key={post.slug}>
-            <Link href={`/posts/${post.slug}`}>
-              <h3>{post.title}</h3>
-            </Link>
-          </div>
-        ))
-      ) : (
-        <p>No tech posts available</p>
-      )}
+    <section className="my-8">
+      <h2 className="text-3xl font-bold text-slate-700 mb-6">História</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {posts.length > 0 ? (
+          posts.map((post) => (
+            <Card key={post.slug} post={post} />
+          ))
+        ) : (
+          <p className="text-slate-300">No tech posts available</p>
+        )}
+      </div>
     </section>
   );
 }

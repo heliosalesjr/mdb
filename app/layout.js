@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   let header = (
     <header className="flex items-center justify-between p-4 bg-gray-800 text-white">
       <div>
-        <h1 className="text-2xl font-bold">Helio's main B.</h1>
+        <h1 className="text-2xl font-black">Hélio<span className="text-violet-400">Com</span><span className="font-black text-green-500">H</span></h1>
       </div>
       <nav>
         <ul className="flex space-x-4">

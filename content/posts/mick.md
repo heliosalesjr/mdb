@@ -4,6 +4,7 @@ date: 2024-10-18
 tag: "Integrantes"
 description: "Uma análise da vida e da carreira de Mick Jagger, o líder carismático e vocalista dos Rolling Stones."
 type: "tech"
+image: "/img/stones.jpeg"
 ---
 
 # Mick Jagger: O Carisma em Pessoa

@@ -4,6 +4,7 @@ date: 2024-10-19
 tag: "Álbuns Clássicos"
 description: "Exploração do álbum 'Tattoo You' dos Rolling Stones, lançado em 1981 e famoso pelo hit 'Start Me Up'."
 type: "record"
+image: "/img/stones.jpeg"
 ---
 
 # Tattoo You: A Redescoberta nos Anos 80

@@ -20,6 +20,8 @@ export default function getPostMetadata(basePath) {
       description: matterResult.data.description || "No description",
       type: matterResult.data.type || "No type",
       slug: filename.replace('.md', ''),
+      image: matterResult.data.image,
+      
     };
   });
 
