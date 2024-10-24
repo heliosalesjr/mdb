@@ -1,16 +1,44 @@
 "use client"; // Adicione isso no topo do arquivo
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 export default function HeroSection() {
+  // Lista de imagens para o carrossel
+  const images = [
+    "/img/stones_band.jpg",
+    "/img/stones_band2.jpeg",
+    "/img/stones_band3.jpeg",
+    "/img/stones_band4.jpeg",
+    "/img/stones_band5.jpeg",
+  ];
+
+  // Estado para a imagem atual
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Efeito para trocar a imagem a cada 3 segundos
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Troca a imagem a cada 3 segundos
+    return () => clearInterval(interval); // Limpa o intervalo quando o componente for desmontado
+  }, [images.length]);
+
   return (
     <section className="relative h-[80vh] w-full">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/img/stones_band.jpg')" }} // Certifique-se de que essa imagem esteja no diretório public
-      />
-      
+      {/* Carrossel de Imagens */}
+      <div className="absolute inset-0">
+        <motion.div
+          key={currentImageIndex} // O framer-motion detecta a troca com base na key
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1 }} // Suave transição de fade in/out
+        />
+      </div>
+
       {/* Overlay (Camada preta com opacidade) */}
       <div className="absolute inset-0 bg-black opacity-40" />
 
@@ -43,7 +71,6 @@ export default function HeroSection() {
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
                 Leia mais
-                
               </motion.button>
             </div>
 

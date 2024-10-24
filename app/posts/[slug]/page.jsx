@@ -17,7 +17,7 @@ export default async function Post({ params }) {
     <div>
       
       {/* Renderiza o conteúdo Markdown usando markdown-to-jsx */}
-      <div className="prose mx-auto">
+      <div className="prose mx-auto mt-8">
         <Markdown>{content}</Markdown>
       </div>
     </div>
