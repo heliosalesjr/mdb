@@ -1,9 +1,8 @@
-"use client"
+"use client";
 import { motion } from 'framer-motion';
 import Card from '@/components/Card';
 
 export default function HistorySection({ posts }) {
-  // Configuração de animação para os cards
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -21,7 +20,7 @@ export default function HistorySection({ posts }) {
       scale: 1,
       y: 0,
       transition: {
-        type: 'spring', // Tipo de transição para uma animação suave
+        type: 'spring',
         stiffness: 100,
         damping: 10,
       },
@@ -35,7 +34,8 @@ export default function HistorySection({ posts }) {
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
         variants={container}
         initial="hidden"
-        animate="show"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }} // Controla quando a animação dispara
       >
         {posts.length > 0 ? (
           posts.map((post) => (
@@ -50,3 +50,4 @@ export default function HistorySection({ posts }) {
     </section>
   );
 }
+
