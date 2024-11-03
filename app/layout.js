@@ -22,9 +22,12 @@ export default function RootLayout({ children }) {
 
   let header = (
     <header className="flex items-center justify-between p-4 bg-slate-50 text-slate-600">
-      <div>
-        <h1 className="text-2xl font-black">The<span className="text-red-500">Rolling</span><span className="font-black text-blue-500">Stones</span><span className="font-black text-slate-600">Blog</span></h1>
-      </div>
+      <Link href={"/"}>
+        <div >
+          <h1 className="text-2xl font-black">The<span className="text-red-500">Rolling</span><span className="font-black text-blue-500">Stones</span><span className="font-black text-slate-600">Blog</span></h1>
+        </div>
+      </Link>
+      
       <nav>
         <ul className="flex space-x-4">
           <li>
@@ -43,7 +46,7 @@ export default function RootLayout({ children }) {
   );
 
   let footer = (
-    <footer className="p-4 bg-gray-800 text-white">
+    <footer className="p-4 bg-gray-800 text-white py-24">
       <p className="text-center">Helio Sales Jr. © 2024</p>
     </footer>
   );
