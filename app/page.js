@@ -1,10 +1,7 @@
-// app/page.js
-
 import getPostMetadata from "@/utils/getPostMetadata";
 import HistorySection from "@/components/HistorySection";
 import RecordSection from "@/components/RecordSection";
 import PlaceSection from "@/components/PlaceSection";
-import TestMotion from "@/components/test-motion";
 import HeroSection from "@/components/Hero";
 
 export default async function Home() {
